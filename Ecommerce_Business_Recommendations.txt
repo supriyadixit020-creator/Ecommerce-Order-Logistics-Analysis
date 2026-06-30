@@ -1,0 +1,162 @@
+================================================================
+PROJECT: E-Commerce Order & Logistics Analysis
+DATASET: Brazilian E-Commerce Public Dataset by Olist (96,478 orders)
+TOOLS USED: Python (Pandas, Seaborn, Matplotlib) | SQL Server (JOINs, CTEs) | Power BI
+================================================================
+
+TOP 5 BUSINESS INSIGHTS & RECOMMENDATIONS
+================================================================
+
+INSIGHT 1 — Extreme Geographic Revenue Concentration
+----------------------------------------------------------------
+Finding:
+São Paulo (SP) state alone generates $5.2M in revenue — 39% of 
+total company revenue ($13.2M) — from a single state, while the 
+next two states (RJ, MG) combined contribute only 26%.
+
+Root Cause:
+Olist's seller and customer base is heavily concentrated in 
+Brazil's economic hub, with limited market penetration elsewhere.
+
+Recommendation:
+- Launch targeted marketing campaigns in underpenetrated states 
+  (e.g., MA, CE, BA) where order volume is low but growth potential exists
+- Diversify seller onboarding incentives outside SP to reduce 
+  single-region dependency
+- Monitor SP-specific risks (regulatory, logistics, competition) 
+  given its outsized revenue contribution
+
+Expected Impact:
+Reducing SP's revenue share from 39% to 30% by growing other 
+regions could protect against regional business disruption and 
+unlock an estimated 15-20% incremental national revenue.
+
+================================================================
+
+INSIGHT 2 — High-Value Orders Face Greater Delivery Risk
+----------------------------------------------------------------
+Finding:
+Late-delivered orders carry a higher average value ($135.71) than 
+on-time orders ($118.87) — a 14% premium. "Not Delivered" orders 
+show the highest average value of all at $151.08.
+
+Root Cause:
+Higher-value orders may involve more items, larger/heavier products, 
+or longer-distance shipments — all of which increase logistics 
+complexity and delay risk.
+
+Recommendation:
+- Implement priority/expedited handling for orders above a defined 
+  value threshold (e.g., $150+)
+- Add proactive delivery tracking and customer communication for 
+  high-value shipments
+- Review carrier performance specifically for high-ticket orders
+
+Expected Impact:
+Protecting high-value order delivery could prevent disproportionate 
+revenue loss, given these orders contribute more per transaction 
+to overall revenue.
+
+================================================================
+
+INSIGHT 3 — Maranhão (MA) Has the Worst Delivery Performance
+----------------------------------------------------------------
+Finding:
+MA state shows a 16.73% late delivery rate — nearly 2.5x the 
+company-wide average of 6.77%. Other underperforming states 
+include CE (13.17%) and BA (11.72%).
+
+Root Cause:
+Likely longer shipping distances from primary fulfillment/seller 
+hubs (concentrated in SP/RJ) combined with less developed regional 
+logistics infrastructure.
+
+Recommendation:
+- Audit carrier and route performance specifically for MA, CE, and BA
+- Explore regional fulfillment partnerships or local warehousing 
+  to reduce delivery distance
+- Set more realistic estimated delivery dates for high-risk states 
+  to better align customer expectations
+
+Expected Impact:
+Improving logistics for these 3 states could reduce their combined 
+late delivery rate by an estimated 5-7 percentage points.
+
+================================================================
+
+INSIGHT 4 — Credit Card Dominates Payment Behavior
+----------------------------------------------------------------
+Finding:
+Credit card is used in 73.9% of all transactions, representing 
+$12.5M (nearly 95%) of total payment value, with an average of 
+3 installments per transaction.
+
+Root Cause:
+Installment-based credit card payments are a culturally preferred 
+and accessible payment method in the Brazilian e-commerce market.
+
+Recommendation:
+- Ensure credit card payment infrastructure has maximum reliability 
+  and minimal transaction friction, given its outsized importance
+- Test installment-based promotional offers (e.g., "0% interest, 
+  6 installments") to drive higher cart values
+- Monitor boleto (19% of transactions) users separately, as this 
+  payment method has different cash-flow timing implications
+
+Expected Impact:
+Optimizing the credit card checkout experience could reduce cart 
+abandonment and support higher average order values across the 
+dominant payment channel.
+
+================================================================
+
+INSIGHT 5 — Top Category Concentration in Revenue
+----------------------------------------------------------------
+Finding:
+The top 3 categories (Health & Beauty, Watches & Gifts, Bed/Bath/
+Table) generate $3.5M combined — about 27% of total revenue — out 
+of 70+ product categories. Watches & Gifts shows the highest 
+average order value among top categories despite fewer orders 
+than Bed/Bath/Table.
+
+Root Cause:
+Premium-positioned categories (Watches & Gifts) drive higher 
+revenue per transaction, while high-volume categories (Bed/Bath/
+Table) rely on transaction frequency rather than price.
+
+Recommendation:
+- Expand premium/gift-category catalog depth, given strong revenue-
+  per-order performance
+- Apply volume-driven promotional strategy (bundling, free shipping 
+  thresholds) for high-frequency categories like Bed/Bath/Table
+- Investigate low-performing categories (e.g., ferramentas_jardim) 
+  for potential catalog rationalization or targeted promotion
+
+Expected Impact:
+A focused dual strategy (premium expansion + volume promotion) 
+could improve overall category-level profitability without 
+requiring uniform across-the-board investment.
+
+================================================================
+
+OVERALL BUSINESS IMPACT SUMMARY
+----------------------------------------------------------------
+| Metric                            | Value           |
+|------------------------------------|-----------------|
+| Total Orders Analyzed              | 96,478          |
+| Total Revenue                      | $13,221,498     |
+| Average Order Value                | $119.98         |
+| Late Delivery Rate                 | 6.77%           |
+| Highest-Risk State (Late %)        | MA (16.73%)     |
+| Top Revenue State                  | SP (39% share)  |
+| Dominant Payment Method            | Credit Card (74%)|
+| Top Product Category               | Health & Beauty |
+
+Note: Dataset spans September 2016 to August 2018. September 2018 
+data is incomplete (extraction cutoff) and was excluded from trend 
+analysis to avoid misleading conclusions.
+
+================================================================
+Prepared by: Supriya Dixit
+Date: June 2026
+================================================================
