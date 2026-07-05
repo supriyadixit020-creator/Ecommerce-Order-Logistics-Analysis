@@ -176,8 +176,6 @@ Ecommerce-Order-Analysis/
 **Supriya Dixit** — Aspiring Data Analyst
 Connecting the dots between tables — and between data and decisions.
 
-📧 your.email@example.com &nbsp;|&nbsp; 🔗 [LinkedIn](your-linkedin-url) &nbsp;|&nbsp; 🐙 [GitHub](your-github-url)
-
 ---
 
 <div align="center">
